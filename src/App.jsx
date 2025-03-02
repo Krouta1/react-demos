@@ -20,6 +20,13 @@ import UserList from './components/UserList';
 import UserStatus from './components/UserStatus';
 import Weather from './components/Weather';
 import Switcher from './components/Switcher';
+import BasicEffect from './components/BasicEffect';
+import CounterEffect from './components/CounterEffect';
+import FetchDataEffect from './components/FetchDataEffect';
+import ComponentA from './components/ComponentA';
+import UserProfile from './components/UserProfile';
+import UpdateUser from './components/UpdateUser';
+import { UserProvider } from './context/UserContext';
 
 function App() {
   return (
@@ -45,7 +52,15 @@ function App() {
       {/* <Profile /> */}
       {/* <ShoppingList /> */}
       {/* <CopyInput /> */}
-      <Switcher />
+      {/* <Switcher /> */}
+      {/* <BasicEffect />
+      <CounterEffect />
+      <FetchDataEffect /> */}
+      {/* <ComponentA /> */}
+      <UserProvider>
+        <UserProfile />
+        <UpdateUser />
+      </UserProvider>
     </div>
   );
 }
