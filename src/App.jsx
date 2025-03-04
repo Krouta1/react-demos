@@ -27,6 +27,10 @@ import ComponentA from './components/ComponentA';
 import UserProfile from './components/UserProfile';
 import UpdateUser from './components/UpdateUser';
 import { UserProvider } from './context/UserContext';
+import ReducerCounter from './components/ReducerCounter';
+import ToggleComponent from './components/ToggleComponent';
+import FormComponent from './components/FormComponent';
+import FetchComponent from './components/FetchComponent';
 
 function App() {
   return (
@@ -57,10 +61,14 @@ function App() {
       <CounterEffect />
       <FetchDataEffect /> */}
       {/* <ComponentA /> */}
-      <UserProvider>
+      {/* <UserProvider>
         <UserProfile />
         <UpdateUser />
-      </UserProvider>
+      </UserProvider> */}
+      {/* <ReducerCounter /> */}
+      <ToggleComponent />
+      <FormComponent />
+      <FetchComponent />
     </div>
   );
 }
